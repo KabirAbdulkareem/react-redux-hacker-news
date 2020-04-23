@@ -24,6 +24,8 @@ const stories = [
     objectID: 1,
   },
 ];
+console.log(stories)
+
 ReactDOM.render(
   <App stories={stories} />,
   document.getElementById('root')
