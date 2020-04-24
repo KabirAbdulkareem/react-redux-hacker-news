@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
+import store from "./store"
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 
@@ -25,7 +26,7 @@ const stories = [
 console.log(stories);
 
 ReactDOM.render(
-  <App stories={stories} onArchive={() => {}} />,
+  <App stories={store.getState()} onArchive={() => {}} />,
   document.getElementById("root")
 );
 
