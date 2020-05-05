@@ -26,7 +26,7 @@ const stories = [
 console.log(stories);
 
 ReactDOM.render(
-  <App stories={store.getState()} onArchive={() => {}} />,
+  <App stories={store.getState()} onArchive={()=>{}} />,
   document.getElementById("root")
 );
 
